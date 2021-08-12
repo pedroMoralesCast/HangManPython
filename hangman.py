@@ -18,16 +18,7 @@ def inGame(word):
     lettersInGame='_'* len(word)
     lettersInGame=list(lettersInGame)
     for i in range(0,6):
-        answ=input("Introduce una Letra: ")
-        # if len(answ) > 1 :
-        #     answ= list(answ)
-        #     print(answ)
-        # else :
-        #     for n in range(len(word)):
-        #         if answ == word[n]:
-        #             lettersInGame[n]=word[n]
-
-        answ= list(answ)
+        answ=list(input("Introduce una Letra: "))
         for letr in range(len(answ)):
             for n in range(len(word)):
                 if answ[letr] == word[n]:
