@@ -19,9 +19,21 @@ def inGame(word):
     lettersInGame=list(lettersInGame)
     for i in range(0,6):
         answ=input("Introduce una Letra: ")
-        for n in range(len(word)):
-            if answ == word[n]:
-                lettersInGame[n]=word[n]
+        # if len(answ) > 1 :
+        #     answ= list(answ)
+        #     print(answ)
+        # else :
+        #     for n in range(len(word)):
+        #         if answ == word[n]:
+        #             lettersInGame[n]=word[n]
+
+        answ= list(answ)
+        for letr in range(len(answ)):
+            for n in range(len(word)):
+                if answ[letr] == word[n]:
+                    lettersInGame[n]=word[n]
+
+
         wordComp=" ".join(lettersInGame)
         print(wordComp)
     print("EndGame")
