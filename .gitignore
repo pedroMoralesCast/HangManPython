@@ -1,0 +1,12 @@
+venv/
+archivos.py
+assert_statements.py
+debugging.py
+dict_comprehensions.py
+filtrando.py
+highLevel.py
+list_and_dicts.py
+list_comprehensions.py
+.vscode/
+Archivos/Names.txt
+Archivos/Numbers.txt
