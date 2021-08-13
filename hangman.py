@@ -1,6 +1,7 @@
 # from random import seed
 # from random import random
 import random
+import os
 # seed random number generator
 
 def getWord():
@@ -12,20 +13,24 @@ def getWord():
     wordRandom=list(wordRandom)
     return wordRandom
 
-    
+# def wellcome():
+#     print("Bienvenido a HangMan")
+
 def inGame(word):
     lettersInGame=[]
     lettersInGame='_'* len(word)
     lettersInGame=list(lettersInGame)
     for i in range(0,6):
+        os.system("cls")
+        wordComp=" ".join(lettersInGame)
+        print(wordComp)
         answ=list(input("Introduce una Letra: "))
         for letr in range(len(answ)):
             for n in range(len(word)):
                 if answ[letr] == word[n]:
                     lettersInGame[n]=word[n]
-        wordComp=" ".join(lettersInGame)
-        print(wordComp)
         if lettersInGame == word :
+            os.system("cls")
             print("Has ganado!")
             break
     word="".join(word)
