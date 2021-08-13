@@ -1,8 +1,5 @@
-# from random import seed
-# from random import random
 import random
 import os
-# seed random number generator
 
 def getWord():
     wordsList=[]
@@ -14,7 +11,7 @@ def getWord():
     return wordRandom
 
 def wellcome():
-    os.system("cls")
+    os.system("clsae")
     print("""
     ||==========================================================================================||
     ||                               _   _                      ___  ___                        ||
