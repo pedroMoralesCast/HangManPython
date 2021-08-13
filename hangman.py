@@ -11,7 +11,7 @@ def getWord():
     return wordRandom
 
 def wellcome():
-    os.system("clsae")
+    os.system("cls")
     print("""
     ||==========================================================================================||
     ||                               _   _                      ___  ___                        ||
