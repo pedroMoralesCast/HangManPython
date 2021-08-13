@@ -23,15 +23,18 @@ def inGame(word):
             for n in range(len(word)):
                 if answ[letr] == word[n]:
                     lettersInGame[n]=word[n]
-
-
         wordComp=" ".join(lettersInGame)
         print(wordComp)
+        if lettersInGame == word :
+            print("Has ganado!")
+            break
+    word="".join(word)
+    print("La palabra era: ", word)
     print("EndGame")
 
 def run():
     word=getWord()
-    print(word)
+    # print(word)
     inGame(word)
 
 
