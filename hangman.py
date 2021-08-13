@@ -13,8 +13,14 @@ def getWord():
     wordRandom=list(wordRandom)
     return wordRandom
 
-# def wellcome():
-#     print("Bienvenido a HangMan")
+def wellcome():
+    print("""
+    ||==========================================================================================||
+    ||                                  ||  ||   /  
+    ||          BIENVENIDO AL JUEGO     ||==||  //_
+    ||                                  ||  || //
+    ||==========================================================================================||
+    """)
 
 def inGame(word):
     lettersInGame=[]
