@@ -14,13 +14,22 @@ def getWord():
     return wordRandom
 
 def wellcome():
+    os.system("cls")
     print("""
     ||==========================================================================================||
-    ||                                  ||  ||   /  
-    ||          BIENVENIDO AL JUEGO     ||==||  //_
-    ||                                  ||  || //
+    ||                               _   _                      ___  ___                        ||
+    ||                              | | | |                     |  \/  |                        ||
+    ||                              | |_| |  __ _  _ __    __ _ | .  . |  __ _  _ __            ||
+    ||   Bienvenido al              |  _  | / _` || '_ \  / _` || |\/| | / _` || '_ \           ||
+    ||       juego:                 | | | || (_| || | | || (_| || |  | || (_| || | | |          ||
+    ||                              \_| |_/ \__,_||_| |_| \__, |\_|  |_/ \__,_||_| |_|          ||
+    ||                                                     __/ |                                ||
+    ||                                                    |___/                                 ||
     ||==========================================================================================||
+
+    Se seleccionará una palabra al azar y tienes que adivinarla. Usa solo minusculas.
     """)
+
 
 def inGame(word):
     lettersInGame=[]
@@ -44,11 +53,13 @@ def inGame(word):
     print("EndGame")
 
 def run():
-    word=getWord()
-    # print(word)
-    inGame(word)
-
-
+    wellcome()
+    if input("Estas listo para jugar? (y/n)") == 'y':
+        word=getWord()
+        # print(word)
+        inGame(word)
+    else :
+        os.system("cls")
 
 if __name__ == '__main__':
     run()
